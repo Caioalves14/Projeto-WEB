@@ -6,6 +6,7 @@
     <!-- tag link para adicionar o icone -->
     <link rel="shortcut icon" href="imagem/favicon-32x32.png">
     <title>Jurubeba, Team Shirts</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- hierarquia de titulos com tag h -->
@@ -22,10 +23,14 @@
         <li>Camisas retrô</li>
         </a>
     </ul>
-    <h3>Camisas de time</h3>
+    <h2>Camisas de time</h2>
     <p>Esse projeto terá como intuíto montar um site de venda de camisa de time</p>
     <p><mark>daqui a pouco fica pronto</mark></p>
-    <!-- tag img para adicionar imagem -->
-    <img src="imagem/camisaLiverpool - p.jpg" alt="camisa Liverpool">
+    <!-- tag img para adicionar imagem redimensionada-->
+    <picture>
+        <source media="(max-width: 675px)"srcset="imagem/camisaLiverpool-p.jpg" type="image/jpg">
+        <source media="(max-width: 850px)"srcset="imagem/camisaLiverpool-m.jpg" type="image/jpg">
+        <img src="imagem/camisaLiverpool-g.jpg" alt="CamisaLiverpool">
+    </picture>
 </body>
 </html>
