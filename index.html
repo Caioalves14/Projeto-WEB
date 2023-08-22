@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="produtos"></div>
+    <div id="carrinho"></div>
     <!-- hierarquia de titulos com tag h -->
     <h1>Catálogo de loja de camisas de time:</h1>
     <!-- Adicionando listas tag ul -->
@@ -31,5 +33,42 @@
         <source media="(max-width: 850px)"srcset="imagem/camisaLiverpool-m.jpg" type="image/jpg">
         <img src="imagem/camisaLiverpool-g.jpg" alt="CamisaLiverpool">
     </picture>
+    <script>
+        const itens = [
+            {
+                id: 0,
+                nome: 'time brasileiros',
+                img: 'image.jpg',
+                quantidade: 0
+            },
+            {
+                id: 1,
+                nome: 'time europeu',
+                img: 'image.jpg',
+                quantidade: 0
+            },
+            {
+                id: 2,
+                nome: 'retro',
+                img: 'image.jpg',
+                quantidade: 0
+            }
+        ]
+
+        InicializarLoja = () => {
+            var containerProdutos = document.getElementById('produtos');
+            Itens.map((val) => {
+                containerProdutos.innerHTML += `
+                
+                <div        class="produto-single">
+                    <img src="`+val.img+`"/>
+                    <p> `+val.nome+`</p>
+                    <a key = "`+val.id+`"href="">Adicionar ao carrinho<a/>
+                </div>
+                `;
+            })
+        }
+        InicializarLoja();
+    </script>
 </body>
 </html>
