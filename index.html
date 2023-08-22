@@ -3,20 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- tag link para adicionar o icone -->
     <link rel="shortcut icon" href="imagem/favicon-32x32.png">
     <title>Jurubeba, Team Shirts</title>
+    <!-- tag link p/ CSS externo -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="produtos"></div>
-    <div id="carrinho"></div>
-    <!-- hierarquia de titulos com tag h -->
     <h1>Catálogo de loja de camisas de time:</h1>
-    <!-- Adicionando listas tag ul -->
+    <!-- ul para listas nao numeradas -->
+    <!-- tag a para usar como link -->
     <ul>
-        <!-- tag li para referirir a um item da lista -->
-        <!-- tag a para ficar em formato de link -->
         <li><a href="pag03.html" target="_blank">Camisas de times brasileiros</a></li>
         <a href="pag01.html"target="_blank">
         <li>Camisas de times Europeus</li>
@@ -27,48 +23,12 @@
     </ul>
     <h2>Camisas de time</h2>
     <p>Esse projeto terá como intuíto montar um site de venda de camisa de time</p>
-    <!-- tag img para adicionar imagem redimensionada-->
+    <!-- tag picture p/ ter opção de redimensionar imagem-->
     <picture>
         <source media="(max-width: 675px)"srcset="imagem/camisaLiverpool-p.jpg" type="image/jpg">
         <source media="(max-width: 850px)"srcset="imagem/camisaLiverpool-m.jpg" type="image/jpg">
         <img src="imagem/camisaLiverpool-g.jpg" alt="CamisaLiverpool">
     </picture>
-    <script>
-        const itens = [
-            {
-                id: 0,
-                nome: 'time brasileiros',
-                img: 'image.jpg',
-                quantidade: 0
-            },
-            {
-                id: 1,
-                nome: 'time europeu',
-                img: 'image.jpg',
-                quantidade: 0
-            },
-            {
-                id: 2,
-                nome: 'retro',
-                img: 'image.jpg',
-                quantidade: 0
-            }
-        ]
-
-        InicializarLoja = () => {
-            var containerProdutos = document.getElementById('produtos');
-            Itens.map((val) => {
-                containerProdutos.innerHTML += `
-                
-                <div        class="produto-single">
-                    <img src="`+val.img+`"/>
-                    <p> `+val.nome+`</p>
-                    <a key = "`+val.id+`"href="">Adicionar ao carrinho<a/>
-                </div>
-                `;
-            })
-        }
-        InicializarLoja();
-    </script>
+    
 </body>
 </html>
