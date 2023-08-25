@@ -9,26 +9,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Catálogo de loja de camisas de time:</h1>
-    <!-- ul para listas nao numeradas -->
-    <!-- tag a para usar como link -->
-    <ul>
-        <li><a href="pag03.html" target="_blank">Camisas de times brasileiros</a></li>
-        <a href="pag01.html"target="_blank">
-        <li>Camisas de times Europeus</li>
-        </a>
-        <a href="pag02.html" target="_blank">
-        <li>Camisas retrô</li>
-        </a>
-    </ul>
-    <h2>Camisas de time</h2>
-    <p>Esse projeto terá como intuíto montar um site de venda de camisa de time</p>
-    <!-- tag picture p/ ter opção de redimensionar imagem-->
-    <picture>
-        <source media="(max-width: 675px)"srcset="imagem/camisaLiverpool-p.jpg" type="image/jpg">
-        <source media="(max-width: 850px)"srcset="imagem/camisaLiverpool-m.jpg" type="image/jpg">
-        <img src="imagem/camisaLiverpool-g.jpg" alt="CamisaLiverpool">
-    </picture>
+    <!-- tag header para html semântico -->
+    <header class="topo">
+        <h1>Jurubeba, Team Shirts</h1>
+        <p>A camisa do seu time preferido direto para você</p>
+    </header>
+    <!-- Tag nav para uma navegação no html semântico -->
+    <nav class="menu">
+        <ul>
+            <li><a href="pg_times_brasileiros.html" target="_blank">Camisas de times brasileiros</a></li>
+            <a href="pg_times_brasileiros.html"target="_blank">
+            <li>Camisas de times Europeus</li>
+            </a>
+            <a href="pg_retros.html" target="_blank">
+            <li>Camisas retrô</li>
+            </a>
+        </ul>
+    </nav>
+    <selection class="div">
+        <h2>promoção do dia</h2>
+        <br><br>
+        <h2>Escolha o time</h2>
+    </selection>
     
 </body>
 </html>
