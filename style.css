@@ -2,6 +2,7 @@
 
 *{
     box-sizing: border-box;
+    /* padding: 5px; */
 }
 /* Alterar todo corpo */
 body{
@@ -11,19 +12,77 @@ body{
 }
 /* Modificando o CSS do topo */
 .topo{
+    font-family: 'Roboto', sans-serif;
     background-color: rgb(68, 68, 166);
     color: white;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
+    width: 100%;
 }
 /* Modificando o menu */
-.menu{
+.menu a{
     background-color: white;
-    color: black;
+    color: rgb(68, 68, 166);
     overflow: hidden;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    text-decoration: underline;
 }
 /* Modificando uma div */
 .div{
+    text-align: center;
     background-color: white;
     color: black;
+}
+
+/* Botão para o suporte */
+.contato a{
+    text-decoration:none;/* Deixar sem a decoração própria do link */
+    display: inline-block;/* Maneira do conteúdo se posicionar */
+    background-color: rgb(4, 104, 4);/* Cor de fundo */
+    color: white;/* Cor da letra */
+    position: fixed; /*Posicionamento fixo na tela*/
+    border: 3px solid green; /*Modificando a borda*/
+    padding: 10px; /*Espaçamento do conteúdo*/
+    bottom: 10px;/*Posicionamento abaixo*/
+    right: 10px; /*Posicionamento a direita*/
+    font-size: 20px; /*Tamanho da fonte*/
+    border-radius: 5px;/* Deixar a borda mais arredondada (Lá ele) */
+}
+
+.contato a:hover{
+    text-decoration: underline;
+
+}
+
+/* CSS do botão de fazer login */
+.login a{
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(68, 68, 166);
+    color: white;
+    bottom: 10px;
+    font-size: 20px;
+    border: 3px solid blue;
+    border-radius: 5px;
+}
+
+.btn_entrar{
+    background-color: rgb(68, 68, 166);
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.img_europa img{
+    background-color: rgb(127, 127, 211);
+    display:inline-block;
+    width: 20%;
+    height: 100px;
 }
