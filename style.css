@@ -1,8 +1,16 @@
 @charset "UTF-8";
 
+
 *{
     box-sizing: border-box;
     /* padding: 5px; */
+}
+/* Alterando a interface da tela de inicio */
+#interface{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
 }
 /* Alterar todo corpo */
 body{
@@ -11,20 +19,22 @@ body{
     color: white;
 }
 /* Modificando o CSS do topo */
-.topo{
+#topo{
     font-family: 'Roboto', sans-serif;
     background-color: rgb(68, 68, 166);
     color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
     width: 100%;
 }
 /* Modificando o menu */
-.menu a{
-    background-color: white;
-    color: rgb(68, 68, 166);
+#menu a{
+    color: rgb(246, 246, 246);
     overflow: hidden;
     text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    border: solid 3px white;
 }
 
 .menu a:hover{
@@ -81,8 +91,10 @@ body{
 }
 
 .img_europa img{
-    background-color: rgb(127, 127, 211);
+    background-color: rgb(255, 255, 255);
     display:inline-block;
-    width: 20%;
+    width: 40%;
     height: 100px;
+    max-width: 60%;
+    padding: 5px;
 }
