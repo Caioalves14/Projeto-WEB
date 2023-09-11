@@ -17,6 +17,7 @@ body{
     margin: 0;
     background-color: rgb(255, 255, 255);
     color: white;
+    /* height: 200vh; */
 }
 /* Modificando o CSS do topo */
 #topo{
@@ -48,7 +49,7 @@ body{
 }
 
 /* Botão para o suporte */
-.contato a{
+#contato a{
     text-decoration:none;/* Deixar sem a decoração própria do link */
     display: inline-block;/* Maneira do conteúdo se posicionar */
     background-color: rgb(4, 104, 4);/* Cor de fundo */
@@ -56,13 +57,21 @@ body{
     position: fixed; /*Posicionamento fixo na tela*/
     border: 3px solid green; /*Modificando a borda*/
     padding: 10px; /*Espaçamento do conteúdo*/
-    bottom: 10px;/*Posicionamento abaixo*/
-    right: 10px; /*Posicionamento a direita*/
     font-size: 20px; /*Tamanho da fonte*/
     border-radius: 5px;/* Deixar a borda mais arredondada (Lá ele) */
 }
 
-.contato a:hover{
+.instagram{
+    bottom: 10px;/*Posicionamento abaixo*/
+    right: 10px; /*Posicionamento a direita*/
+}
+
+.suporte{
+    bottom: 10px;/*Posicionamento abaixo*/
+    right: 60px; /*Posicionamento a direita*/
+}
+
+#contato a:hover{
     text-decoration: underline;
 
 }
