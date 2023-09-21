@@ -12,13 +12,15 @@
 <body>
     <div id="interface">
     <!-- tag header para html semântico -->
-    <header id="topo">
-        <h1>Jurubeba, Team Shirts</h1>
-        <p>A camisa do seu time preferido direto para você</p>
+        <header id="topo">
+            <div class="logo">
+                <h1>Jurubeba, Team Shirts</h1>
+            </div>
+            <p>A camisa do seu time preferido direto para você</p>
 
-        <!-- Tag nav para uma navegação no html semântico -->
-    <nav id="menu">
-        <ul>
+            <!-- Tag nav para uma navegação no html semântico -->
+        <nav id="menu">
+            <ul>
             <a href="pg_times_brasileiros.html" target="_blank"><li>Camisas de times europeus</li></a>          
             <a href="pg_times_europeus.html"target="_blank">
             <li>Camisas de times brasileiros</li>
@@ -34,11 +36,44 @@
     </nav>
     </header>
     
-    <selection class="div">
-        <h2>promoção do dia</h2>
-        <br><br>
-        <h2>Escolha o time</h2>
-    </selection>
+    <section id="conteudo">
+        <div class="promocao-dia">
+            <h2>promoção do dia</h2>
+            <div class="imagem-promocao"><img style="max-width: 90%;" src="imagem/Banner para Loja de Camisas de Time.jpg" alt="camisa-time"></div>
+        </div>
+        <div class="escolha-time">
+            <h2>Escolha o time</h2>
+        </div>
+
+        <div class="tabela">
+            <table>
+                <tr>
+                    <td>P</td>
+                    <td>M</td>
+                    <td>G</td>
+                    <td>GG</td>
+                </tr>
+                <tr>
+                    <td>LT- 55-59</td>
+                    <td>LT- 60-65</td>
+                    <td>LT- 66-71</td>
+                    <td>LT- 72-77</td>
+                </tr>
+                <tr>
+                    <td>Comp. 50-55</td>
+                    <td>Comp. 56-61</td>
+                    <td>Comp. 62-67</td>
+                    <td>Comp. 68-73</td>
+                </tr>
+                <tr>
+                    <td>Manga. 18-22</td>
+                    <td>Manga. 23-27</td>
+                    <td>Manga. 28-32</td>
+                    <td>Manga. 33-36</td>
+                </tr>
+            </table>
+        </div>
+    </section>
     
     <div class="login"> <a href="pg_login.html">Fazer login</a></div>
     </div>
