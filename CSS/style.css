@@ -64,12 +64,34 @@ section{
     background-color: white;
     color: black;
 }
+.subtitulo{
+    color: white;
+    text-align: center;
+    flex: 40%;
+}
 .promocao-dia{
     flex: 40%;
     margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
+    color:  rgb(68, 68, 166);
 }
 .imagem-promocao{
+    margin-right: 10%;
+    margin-left: 10%;
+    flex: 40%;
+    text-align: center;
+}
+
+.escolha-time{
+    flex: 40%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color:  rgb(68, 68, 166);
+}
+.imagem-times{
+    margin-right: 10%;
     margin-right: 10%;
     flex: 40%;
     text-align: center;
