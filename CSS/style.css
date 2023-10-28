@@ -18,7 +18,7 @@ body{
     /* height: 200vh; */
 }
 /* Modificando o CSS do topo */
-#topo{
+.topo{
     font-family: 'Roboto', sans-serif;
     background-color: rgb(68, 68, 166);
     color: white;
@@ -146,4 +146,22 @@ section{
     font-size: 15px;
     border: 3px solid white;
     border-radius: 5px;
+}
+
+.return{
+    background-color: rgb(68, 68, 166);
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    border: 3px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.return:hover{
+    padding: 13px;
+}
+.btn_entrar:hover{
+    padding: 13px;
 }
